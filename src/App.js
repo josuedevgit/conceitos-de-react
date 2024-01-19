@@ -1,30 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
-const user = {
-  name: "Hedy Lamarr",
-  imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
-  imageSize: 90,
-  imageRadius: 50,
-}
+import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
+import HedyLamarr from './components/HedyLamarr';
 
 function App() {
+
+  
   return (
     <div className="App">
-      {/*<h1>Meu primeiro projeto riéqueti</h1>
-      <p>Hello darkness, my old friend</p>*/}
+      <HelloWorld />
+      <SayMyName nome="Josias" />
+      <Pessoa
+        url="https://avatars.githubusercontent.com/u/109594019?v=4"
+        nome="Josué"
+        idade="32"
+        profissao="Jogador de futebol"
+      />
 
-      <h1>{user.name}</h1>
-      <img 
-        src={user.imageUrl}
-        alt={"Photo of " + user.name}
-        style={{
-          width: user.imageSize,
-          height: user.imageSize,
-          borderRadius: user.imageRadius + "%"
-        }}
-
-      ></img>
+      <HedyLamarr />
 
     </div>
   );
