@@ -5,12 +5,14 @@ import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import HedyLamarr from './components/HedyLamarr';
+import Frase from './components/Frase';
 
 function App() {
 
   
   return (
     <div className="App">
+      <Frase />
       <HelloWorld />
       <SayMyName nome="Josias" />
       <Pessoa
